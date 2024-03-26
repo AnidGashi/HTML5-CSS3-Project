@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@keyframes slider {
+
+    from{
+        transform: translateX(-1200px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+    
+}
+
+:root{
+    --main-color: rgb(22, 26, 48);
+    --secondary-color: rgb(49, 48, 77);
+    --third-color: rgb(182, 187, 196);
+    --fourth-color: rgb(240, 236, 229);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.btn{
+    color: var(--fourth-color);
+    background-color: var(--main-color);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+
+    &:hover{
+        color: var(--main-color);
+        background-color: var(--third-color);
+    }
+}
+
+header{
+    background-color: var(--main-color);
+    color: var(--third-color);
+    width: 100%;
+}
+.container{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul{
+        display: flex;
+        list-style-type: none;
+        a{
+            color: var(--third-color);
+            padding: 0 20px;
+            border-radius: 5px;
+
+            &:hover{
+                color: var(--main-color);
+                background-color: var(--third-color);
+                text-decoration: none;
+            }
+        }
+    }
+
+    .menu{
+        display: none;
+    }
+}
+
+.about-us{
+    animation-name: slider;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0.2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--main-color);
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.Animation{
+    width: 400px;
+}
+
+.mission{
+    background-color: var(--third-color);
+    height: auto;
+    width: 100%;
+}
+
+.our-mission{
+    h2{
+        padding: 5px;
+        color: var(--main-color);
+    }
+    p{
+        color: var(--main-color);
+    }
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    margin:0 auto;
+}
+
+.mobile-service {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 20px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    background-color: var(--third-color);
+    margin: 0  auto;
+    padding: 10px;
+    
+}
+
+.service {
+    height: auto;
+    margin: 30px auto;
+    width:100%;
+    border-radius: 5px;
+    border: 1px solid var(--main-color) ;
+
+}
+
+.description {
+    padding: 20px; 
+}
+
+.description img {
+    max-width: 100%; 
+}
+
+
+
+.container1{
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+    .btn{
+        width: 40%;
+        margin: 0 auto;
+    }
+    
+}
+
+.phones{
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    display: grid;
+    gap: 50px 50px;
+    grid-template-columns: repeat(3, 1fr);
+    border: none;
+    margin-top: 100px;
+
+    
+}
+
+.box{
+    text-align: center;
+    position: relative;
+    top: 0;
+    transition: ease 0.5s;
+    h4{
+        padding: 20px;
+    }
+
+    .btn{
+        margin-bottom: 10px;
+        width: 25%;
+    }
+
+    &:hover{
+        border: 1px solid var(--main-color);
+        border-radius: 20px;
+        top: -30px;
+    }
+}
+
+.box img{
+    width: 100%;
+    border-bottom: 1px solid var(--main-color) ;
+}
+
+.contact {
+    background-color: rgb(22, 26, 48);
+    color: rgb(182, 187, 196);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact input[type="text"],
+.contact input[type="tel"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(49, 48, 77);
+    color: rgb(182, 187, 196);
+    box-sizing: border-box;
+}
+
+.contact textarea {
+    resize: none;
+}
+
+.contact button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(182, 187, 196);
+    color: rgb(22, 26, 48);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact button[type="submit"]:hover {
+    background-color: rgb(49, 48, 77);
+}
+
+footer {
+    color: rgb(22, 26, 48);
+    background-color: rgb(182, 187, 196);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 5px;
+
+}
+
+ul li a {
+    color: rgb(22, 26, 48);
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+ul li a i {
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        width: 100%;
+        height: auto;
+
+        ul li{
+            display: none;
+        }
+    }
+    .phones{
+        grid-template-columns: repeat(1, 1fr);
+    
+    }
+    
+    .mobile-service{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .phones{
+        grid-template-columns: repeat(2, 1fr);
+    
+    }
+
+    .mobile-service{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .phones{
+        grid-template-columns: repeat(3, 1fr);
+    
+    }
+
+    .mobile-service{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
